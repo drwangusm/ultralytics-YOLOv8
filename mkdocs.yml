@@ -14,30 +14,10 @@ site_dir: "site/" # where to publish to
 theme:
   name: material
   language: en
-  custom_dir: docs/overrides/
   logo: https://github.com/ultralytics/assets/raw/main/logo/Ultralytics_Logotype_Reverse.svg
   favicon: assets/favicon.ico
   icon:
     repo: fontawesome/brands/github
-  palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
   features:
     - content.action.edit
     - content.code.annotate
@@ -58,58 +38,6 @@ theme:
     - navigation.indexes
     - navigation.sections  # navigation.expand or navigation.sections
     - content.tabs.link # all code tabs change simultaneously
-
-# Customization
-copyright: <a href="https://ultralytics.com" target="_blank">© 2024 Ultralytics Inc.</a> All rights reserved.
-extra: # version:
-  robots: robots.txt
-  analytics:
-    provider: google
-    property: G-2M5EHKC0BH
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ultralytics
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/ultralytics/
-    - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/ultralytics
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/ultralytics
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/ultralytics/ultralytics/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/ultralytics/
-    - icon: fontawesome/brands/discord
-      link: https://ultralytics.com/discord
-
-extra_css:
-  - stylesheets/style.css
-extra_javascript:
-  - javascript/extra.js
-
-markdown_extensions:
-  - admonition
-  - md_in_html
-  - tables
-  - attr_list
-  - def_list
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.snippets:
-      base_path: ./
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tabbed:
-      alternate_style: true
 
 # Primary navigation ---------------------------------------------------------------------------------------------------
 nav:
